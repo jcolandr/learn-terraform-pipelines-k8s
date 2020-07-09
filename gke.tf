@@ -37,6 +37,10 @@ resource "google_container_node_pool" "engineering_preemptible_nodes" {
       disable-legacy-endpoints = "true"
     }
 
+    labels = {
+      donotdelete = "true"
+    }
+
     oauth_scopes = [
       "https://www.googleapis.com/auth/logging.write",
       "https://www.googleapis.com/auth/monitoring",
