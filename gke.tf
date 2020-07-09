@@ -38,7 +38,7 @@ resource "google_container_node_pool" "engineering_preemptible_nodes" {
     }
 
     labels = {
-      donotdelete = "true"
+      pleasedonotdelete = "true"
     }
 
     oauth_scopes = [
